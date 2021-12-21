@@ -1,0 +1,40 @@
+﻿@model IEnumerable<LTQL_1721050483.Models.SanPham>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Sản Phẩm</h2>
+
+<p>
+    @Html.ActionLink("thêm mới", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NhaCungCap.Tennhacungcap)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenSanPham)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NhaCungCap.Tennhacungcap)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenSanPham)
+        </td>
+        <td>
+            @Html.ActionLink("sửa", "Edit", new { id=item.MaSanPham }) |
+            @Html.ActionLink("chi tiết", "Details", new { id=item.MaSanPham }) |
+            @Html.ActionLink("xóa", "Delete", new { id=item.MaSanPham })
+        </td>
+    </tr>
+}
+
+</table>
