@@ -132,6 +132,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NhaCungCapsController.cs" />
     <Compile Include="Controllers\SanPhamsController.cs" />
+    <Compile Include="Controllers\View2bangsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -148,6 +149,7 @@
     <Compile Include="Models\LTQLDb.cs" />
     <Compile Include="Models\NhaCungCap.cs" />
     <Compile Include="Models\SanPham.cs" />
+    <Compile Include="Models\View2bang.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -200,6 +202,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\View2bangs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
