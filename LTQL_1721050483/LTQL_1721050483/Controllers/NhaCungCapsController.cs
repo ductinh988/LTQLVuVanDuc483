@@ -21,6 +21,7 @@ namespace LTQL_1721050483.Controllers
         }
 
         // GET: NhaCungCaps/Details/5
+        [Authorize]
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -36,6 +37,7 @@ namespace LTQL_1721050483.Controllers
         }
 
         // GET: NhaCungCaps/Create
+        [Authorize]
         public ActionResult Create()
         {
             return View();
@@ -59,6 +61,7 @@ namespace LTQL_1721050483.Controllers
         }
 
         // GET: NhaCungCaps/Edit/5
+        [Authorize]
         public ActionResult Edit(int? id)
         {
             if (id == null)

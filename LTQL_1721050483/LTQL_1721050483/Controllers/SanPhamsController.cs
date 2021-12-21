@@ -22,6 +22,7 @@ namespace LTQL_1721050483.Controllers
         }
 
         // GET: SanPhams/Details/5
+        [Authorize]
         public ActionResult Details(string id)
         {
             if (id == null)
@@ -37,6 +38,7 @@ namespace LTQL_1721050483.Controllers
         }
 
         // GET: SanPhams/Create
+        [Authorize]
         public ActionResult Create()
         {
             ViewBag.Manhacungcap = new SelectList(db.NhaCungCaps, "Manhacungcap", "Tennhacungcap");
@@ -62,6 +64,7 @@ namespace LTQL_1721050483.Controllers
         }
 
         // GET: SanPhams/Edit/5
+        [Authorize]
         public ActionResult Edit(string id)
         {
             if (id == null)

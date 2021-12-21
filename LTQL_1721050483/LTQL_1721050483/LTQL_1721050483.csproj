@@ -128,6 +128,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NhaCungCapsController.cs" />
     <Compile Include="Controllers\SanPhamsController.cs" />
@@ -138,7 +139,12 @@
     <Compile Include="Migrations\202112210607497_1.Designer.cs">
       <DependentUpon>202112210607497_1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112210620218_2.cs" />
+    <Compile Include="Migrations\202112210620218_2.Designer.cs">
+      <DependentUpon>202112210620218_2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Account.cs" />
     <Compile Include="Models\LTQLDb.cs" />
     <Compile Include="Models\NhaCungCap.cs" />
     <Compile Include="Models\SanPham.cs" />
@@ -190,6 +196,7 @@
     <Content Include="Views\SanPhams\Details.cshtml" />
     <Content Include="Views\SanPhams\Edit.cshtml" />
     <Content Include="Views\SanPhams\Index.cshtml" />
+    <Content Include="Views\Accounts\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -210,6 +217,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202112210607497_1.resx">
       <DependentUpon>202112210607497_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112210620218_2.resx">
+      <DependentUpon>202112210620218_2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
